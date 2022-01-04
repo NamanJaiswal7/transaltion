@@ -28,9 +28,7 @@ app.use(function(req, res, next) {
 });
 require('dotenv').config();
 
-// Your credentials
-const CREDENTIALS = JSON.parse(process.env.CREDENTIALS);
-console.log(CREDENTIALS)
+
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
